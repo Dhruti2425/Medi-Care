@@ -1,0 +1,504 @@
+:root{
+	--text-white: white;
+	--text-skyblue: #2193b0;
+	--text-black: #333333;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	font-family: poppins;
+}
+.container{
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+a{
+	text-decoration: none;
+	display: inline-block;
+}
+ul{
+	list-style: none;
+}
+.d-flex{
+	display: flex;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.justify-content-between{
+	justify-content: space-between;
+}
+.align-items-center{
+	align-items: center;
+}
+.text-center{
+	text-align: center;
+}
+.w-2{
+	width: 50%;
+}
+.w-3{
+	width: 33.33%;
+}
+.w-4{
+	width: 25%;
+}
+.w-5{
+	width: 20%;
+}
+.w-40{
+	width: 40%;
+}
+.w-60{
+	width: 60%;
+}
+.position-relative{
+	position: relative;
+}
+.p-y{
+	padding: 100px 0;
+}
+img{
+	max-width: 100%;
+	display: block;
+}
+.back-to-top{
+	background-color: #5b5b5b;
+/*	border: 2px solid white;*/
+	color: var(--text-white);
+	padding: 10px 15px;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	border-radius: 3px;
+}
+.banner-content h4, .about-us-content h4, .about-content h4, .features-content h4, .about-2-content h4, .testimonial-title h4, .service-content h4{
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+.about-us-content h2, .about-content h2, .features h2, .about-2-content h2, .appointment-content h2{
+	font-size: 45px;
+	margin: 15px 0;
+	font-weight: 600;
+}
+.banner-content p, .about-us-content p, .about-content p, .features-content p, .about-2-content p, .appointment-content p, .footer-items p{
+	font-size: 15px;
+	line-height: 2;
+	font-weight: 300;
+}
+
+/*HEADER*/
+
+header{
+	padding: 25px 0;
+	background: var(--text-white);
+}
+header nav{
+	margin: 0 auto 0 auto;
+}
+header nav ul li:first-child a{
+	color: var(--text-skyblue);
+}
+header nav ul li a{
+	margin-left: 35px;
+	font-size: 16px;
+	color: black;
+	font-weight: 500;
+	transition: all 0.2s;
+}
+header nav ul li a:hover{
+	color: var(--text-skyblue);
+}
+header nav + a{
+	color: var(--text-white);
+	background-color: var(--text-skyblue);
+	border: 2px solid var(--text-skyblue);
+	border-radius: 50px;
+	transition: all 0.3s;
+	padding: 10px 15px;
+}
+header nav + a:hover{
+	background-color: white;
+	color: var(--text-skyblue);
+}
+
+/*BANNER*/
+
+.banner{
+	background-color: var(--text-skyblue);
+	padding-top: 100px;
+	overflow: hidden;
+}
+.banner .banner-content{
+	padding: 100px 50px 0 0;
+	color: var(--text-white);
+}
+.banner .banner-content h1{
+	font-size: 54px;
+	font-weight: 600;
+	line-height: 1.1;
+	padding: 20px 0;
+}
+.banner .banner-content p{
+	padding-bottom: 40px;
+}
+.banner .banner-content a:first-of-type{
+	color: var(--text-skyblue);
+	padding: 20px 30px;
+	background-color: var(--text-white);
+	border: 2px solid var(--text-white);
+	border-radius: 50px;
+	transition: 0.4s all;
+}
+.banner .banner-content a:first-of-type:hover{
+	color: white;
+	background-color: var(--text-skyblue);
+	border: 2px solid var(--text-white);
+}
+.banner .banner-content i{
+	font-size: 20px;
+	color: var(--text-skyblue);
+	padding: 20px;
+	background-color: var(--text-white);
+	border: 1px solid var(--text-white);
+	border-radius: 50%;
+	margin-left: 30px;
+	transition: 0.4s all;
+}
+.banner .banner-content i:hover{
+	color: var(--text-white);
+	border: 1px solid var(--text-white);
+	background-color: var(--text-skyblue);
+	box-shadow: 0 0 5px 2px white;
+}
+.banner .banner-image img{
+	transition: 0.4s all;
+}
+.banner .banner-image img:hover{
+	transform: scale(1.05);
+}
+
+/*ABOUT-US*/
+
+.about-us .about-us-image{
+	transition: all 0.4s;
+}
+.about-us .about-us-image:hover{
+	transform: scale(1.05);
+}
+.about-us .about-us-content h4{
+	color: var(--text-skyblue);
+}
+.about-us .about-us-content p{
+	color: var(--text-black);
+}
+.about-us .about-us-content a{
+	color: white;
+	background-color: var(--text-skyblue);
+	padding: 20px 30px;
+	border: 2px solid var(--text-skyblue);
+	border-radius: 50px;
+	margin-top: 40px;
+	transition: all 0.4s;
+}
+.about-us .about-us-content a:hover{
+	color: var(--text-skyblue);
+	background-color: white;
+
+}
+
+/*ABOUT*/
+
+.about{
+	padding-top: 50px;
+	background-color: var(--text-skyblue);
+	color: var(--text-white);
+	overflow: hidden;
+}
+.about .about-content{
+	margin-top: 60px;
+}
+.about .about-content h2{
+	color: var(--text-white);
+	line-height: 1.2;
+	margin: 20px 0;
+}
+.about .about-content a{
+	color: var(--text-white);
+	padding: 20px 30px;
+	border: 2px solid var(--text-white);
+	border-radius: 50px;
+	margin: 30px 0;
+	transition: all 0.4s;
+}
+.about .about-content a:hover{
+	color: var(--text-skyblue);
+	background-color: var(--text-white);
+}
+.about .about-image{
+	transition: all 0.4s;
+}
+.about .about-image:hover{
+	transform: scale(1.1);
+}
+
+/*OUR-FEATURES*/
+
+.features .features-content{
+	padding: 10px 60px 0 0;
+}
+.features .features-content h4{
+	color: var(--text-skyblue);
+}
+.features .features-content h2{
+	line-height: 1.2;
+}
+.features .features-content p{
+	color: var(--text-black);
+	margin-bottom: 30px;
+}
+.features .features-content a{
+	color: var(--text-white);
+	background-color: var(--text-skyblue);
+	padding: 20px 30px;
+	border: 2px solid var(--text-skyblue);
+	border-radius: 50px;
+	transition: all 0.4s;
+}
+.features .features-content a:hover{
+	color: var(--text-skyblue);
+	background-color: var(--text-white);
+	border: 2px solid var(--text-skyblue);
+}
+.features .feature-inner .feature-items{
+	margin: 30px 40px 10px 0;
+	padding: 45px 30px;
+	box-shadow: 21px 32px 85px -27px rgb(0 0 0 / 28%);
+}
+.features .feature-inner .feature-items i{
+	color: var(--text-skyblue);
+	font-size: 40px;
+}
+.features .feature-inner .feature-items h3{
+	padding: 15px 0;
+}
+.features .feature-inner .feature-items p{
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 1.9;
+}
+
+/*SCORE*/
+
+.score{
+	background-color: var(--text-skyblue);
+	padding: 90px 0;
+	color: var(--text-white);
+	line-height: 1.2;
+}
+.score .score-items h2{
+	font-size: 38px;
+}
+.score .score-items h4{
+	font-weight: 600;
+}
+
+/*ABOUT-2*/
+
+.about-2 .about-2-content{
+	padding: 0 20px;
+}
+.about-2 .about-2-content h4{
+	color: var(--text-skyblue);
+}
+.about-2 .about-2-content ul{
+	padding-top: 10px;
+}
+.about-2 .about-2-content ul li i{
+	font-size: 30px;
+	color: var(--text-skyblue);
+	padding-right: 30px;
+}
+.about-2 .about-2-content ul li{
+	font-size: 15px;
+	font-weight: 300;
+	padding-top: 15px;
+	display: flex;
+	align-items: center;
+}
+.about-2 .about-2-image{
+	transition: all 0.4s;
+	padding: 30px;
+}
+.about-2 .about-2-image:hover{
+	transform: scale(1.05);
+}
+
+/*APPOINTMENT*/
+
+.appointment{
+	background-color: var(--text-skyblue);
+	padding: 60px 0;
+	color: var(--text-white);
+}
+.appointment .appointment-btn a{
+	color: var(--text-skyblue);
+	padding: 20px 30px;
+	background-color: var(--text-white);
+	border: 2px solid var(--text-white);
+	border-radius: 50px;
+	transition: all 0.4s;
+}
+.appointment .appointment-btn a i{
+	padding-left: 3px;
+}
+.appointment .appointment-btn a:hover{
+	color: var(--text-white);
+	background-color: var(--text-skyblue);
+	border: 2px solid var(--text-white);
+}
+/*TESTIMONIAL*/
+
+.testimonial .testimonial-title h4{
+	color: var(--text-skyblue);
+}
+.testimonial .testimonial-title h2{
+	font-size: 45px;
+	font-weight: 600;
+}
+.testimonial .testimonial-items{
+	padding: 50px;
+	margin: 50px 25px 0 25px;
+	background-color: #eeeeee;
+}
+.testimonial .testimonial-items img{
+	width: 100%;
+}
+.testimonial .testimonial-items p{
+	color: #818181;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 2.2;
+}
+.testimonial .testimonial-items .border{
+	width: 80px;
+	height: 1.5px;
+	background-color: var(--text-skyblue);
+	margin: 35px 0;
+}
+.testimonial .testimonial-content .testimonial-image{
+	position: relative;
+}
+.testimonial .testimonial-content .testimonial-image img{
+	width: 100%;
+	padding: 0 30px;
+}
+.testimonial-image .box{
+	width: 0;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.0);
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all 0.4s;
+}
+.testimonial-image:hover .box{
+	background-color: rgba(0, 0, 0, 0.1);
+	width: 100%;
+}
+
+/*FOOTER*/
+
+footer{
+	background-color: var(--text-skyblue);
+	position: relative;
+}
+footer .emergency-service{
+	width: 40%;
+	height: 30%;
+	background-color: var(--text-white);
+	box-shadow: 0 15px 10px 0 rgba(0, 0, 0, 0.4);
+	position: absolute;
+	top: -18%;
+	left: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer .emergency-service .icon{
+	font-size: 50px;
+	color: var(--text-skyblue);
+	border: 3px solid var(--text-skyblue);
+	border-radius: 50%;
+	padding: 8px 20px;
+	margin: 10px;
+}
+footer .service-content{
+	padding: 10px 20px;
+}
+footer .service-content h2{
+	font-size: 40px;
+}
+footer .footer-content .footer-inner{
+	color: var(--text-white);
+	margin: 170px 0 100px 0;
+}
+footer .footer-content .w-60 .footer-inner .w-40 .footer-items{
+	padding: 0 60px;
+}
+footer .footer-content .footer-inner  .footer-items h2{
+	font-size: 40px;
+	font-weight: 600;
+}
+footer .footer-content .w-60 .footer-inner .w-60 .footer-items p{
+	padding: 20px 0 30px 0;
+}
+footer .footer-content .footer-inner .footer-items a{
+	color: var(--text-skyblue);
+	padding: 20px 30px;
+	border: 2px solid var(--text-white);
+	background-color: var(--text-white);
+	border-radius: 50px;
+	transition: all 0.4s;
+}
+footer .footer-content .footer-inner .footer-items a:hover{
+	color: var(--text-white);
+	background-color: var(--text-skyblue);
+	border: 2px solid var(--text-white);
+}
+footer .footer-content .footer-inner .footer-items h3{
+	font-size: 22px;
+	font-weight: 600;
+	padding: 15px 0;
+}
+footer .footer-content .footer-inner .footer-items h4{
+	font-size: 15px;
+	font-weight: 400;
+	padding-top: 15px;
+}
+footer .copyright .border{
+	width: 100%;
+	height: 1px;
+	background-color: var(--text-white);
+	margin-bottom: 30px;
+}
+footer .copyright .copyright-items p{
+	color: var(--text-white);
+	padding-bottom: 30px;
+}
+footer .copyright .copyright-items ul li a span{
+	color: var(--text-white);
+	font-size: 24px;
+	padding-left: 15px;
+}
+footer .copyright .copyright-items ul li a span:hover{
+	color: #cdcdcd;
+}
